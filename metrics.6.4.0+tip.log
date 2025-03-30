@@ -1,0 +1,5 @@
+.6.4.0+tip
+Start building sites … 
+hugo v0.135.0-f30603c47f5205e30ef83c70419f57d7eb7175ab+extended windows/amd64 BuildDate=2024-09-27T13:17:08Z VendorInfo=gohugoio
+
+INFO  static: removing all files from destination that don't exist in static dirs

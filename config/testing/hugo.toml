@@ -1,0 +1,21 @@
+# 我们禁用此功能来测试 exampleSite；你也必须这样做
+# 如果你想使用主题参数disableGeneratorVersion=true;
+# 否则 Hugo 会在您的主页上创建一个生成器标签
+disableHugoGeneratorInject = true
+
+# 我们非常确定，不会出现无意中未翻译的标题；
+# 当短代码想要设置自动标题时可能会发生这种情况
+# 超出给定的样式设置（对于非严重性样式，这允许失败）
+# 启用MissingTranslationPlaceholders = true
+
+# 审核您发布的网站是否存在问题
+# https://discourse.gohugo.io/t/audit-your-published-site-for-problems/35184/12
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepComments = true
+
+[params]
+  disableGeneratorVersion = true
+  disableAssetsBusting = true
+  disableRandomIds = true
