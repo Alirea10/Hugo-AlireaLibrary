@@ -1,6 +1,12 @@
+# 生成的HTML文件
 public/
 public.6.4.0+tip/
 
+#我自己写的启动脚本
 *.bat
 
+#IDE
 .vscode
+
+#hugo本体
+hugo.exe
