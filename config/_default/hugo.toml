@@ -109,15 +109,15 @@ summaryLength = 10
       landingPageName = "<i class='fa-fw fas fa-home'></i> 主页"
 
   [[languages.zh.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> Gitee 仓库"
-    identifier = "ds"
-    url = "https://gitee.com/alirea/alirea-hugo"
+    name = "<i class='fa-fw fab fa-github'></i> Github Hugo构建仓库"
+    identifier = "Github Hugo"
+    url = "https://github.com/Alirea10/Hugo-AlireaLibraryWeb#"
     weight = 10
 
-  # [[languages.zh.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-camera'></i> Showcases"
-  #   pageRef = "showcase/"
-  #   weight = 20
+  [[languages.zh.menu.shortcuts]]
+    name = "<i class='fa-fw fab fa-github'></i> Github WEB构建仓库"
+    identifier = "Github WEB"
+    weight = 20
 
   # [[languages.zh.menu.shortcuts]]
   #   name = "<i class='fa-fw fas fa-bullhorn'></i> Credits"
