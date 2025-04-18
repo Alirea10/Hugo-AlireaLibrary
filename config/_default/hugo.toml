@@ -1,7 +1,7 @@
 # 这是此主题出现在 https://themes.gohugo.io/上所需的设置
 # 将其更改为适合您的值；如果您的网站是从子目录提供的
 # 将其设置为“https://example.com/mysite/”
-baseURL = "https://example.com/"
+baseURL = "https://alirea.top/"
 
 # 从网络服务器和文件系统提供此页面所需的值；
 # 如果您不想从文件系统提供页面服务，您也可以设置此值
@@ -140,45 +140,45 @@ summaryLength = 10
   # 别以为这很严重，伙计；这是令人毛骨悚然的黑客并且：
   # 无意提供产品！啊！
 
-  [languages.pir]
-    title = "Cap'n Hugo Relearrrn Theme"
-    weight = 2
-    # 也有语言密钥会更符合标准
-    # 名为 art-x-pir 但这需要重命名所有文件
-    languageCode = "art-x-pir"
-    languageDirection = "rtl"
-    languageName = "Arrr! ☠ Pirrrates ☠"
-    # 语言相关设置：
-    # 用例 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-    #contentDir =“内容/pir”
-    [languages.pir.params]
-      landingPageName = "<i class='fa-fw fas home'></i> Arrr! Home"
+  # [languages.pir]
+  #   title = "Cap'n Hugo Relearrrn Theme"
+  #   weight = 2
+  #   # 也有语言密钥会更符合标准
+  #   # 名为 art-x-pir 但这需要重命名所有文件
+  #   languageCode = "art-x-pir"
+  #   languageDirection = "rtl"
+  #   languageName = "Arrr! ☠ Pirrrates ☠"
+  #   # 语言相关设置：
+  #   # 用例 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+  #   #contentDir =“内容/pir”
+  #   [languages.pir.params]
+  #     landingPageName = "<i class='fa-fw fas home'></i> Arrr! Home"
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
-    identifier = "ds"
-    url = "https://github.com/McShelby/hugo-theme-relearn"
-    weight = 10
+  # [[languages.pir.menu.shortcuts]]
+  #   name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
+  #   identifier = "ds"
+  #   url = "https://github.com/McShelby/hugo-theme-relearn"
+  #   weight = 10
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-camera'></i> Showcases"
-    pageRef = "showcase/"
-    weight = 20
+  # [[languages.pir.menu.shortcuts]]
+  #   name = "<i class='fa-fw fas fa-camera'></i> Showcases"
+  #   pageRef = "showcase/"
+  #   weight = 20
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-bullhorn'></i> Crrredits"
-    pageRef = "more/credits/"
-    weight = 30
+  # [[languages.pir.menu.shortcuts]]
+  #   name = "<i class='fa-fw fas fa-bullhorn'></i> Crrredits"
+  #   pageRef = "more/credits/"
+  #   weight = 30
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-tags'></i> Arrr! Tags"
-    pageRef = "tags/"
-    weight = 40
+  # [[languages.pir.menu.shortcuts]]
+  #   name = "<i class='fa-fw fas fa-tags'></i> Arrr! Tags"
+  #   pageRef = "tags/"
+  #   weight = 40
 
-  [[languages.pir.menu.shortcuts]]
-    name = "<i class='fa-fw fas fa-layer-group'></i> Categorrries"
-    pageRef = "categories/"
-    weight = 50
+  # [[languages.pir.menu.shortcuts]]
+  #   name = "<i class='fa-fw fas fa-layer-group'></i> Categorrries"
+  #   pageRef = "categories/"
+  #   weight = 50
 
 # 在此展示中仅需要安装来访问公开的屏幕截图和变更日志；
 # 如果您不需要进一步安装，请删除此部分
@@ -217,22 +217,6 @@ summaryLength = 10
   [[module.mounts]]
     source = 'static'
     target = 'static'
-  # 只是为了这个文档在文档中公开我们的配置
-  [[module.mounts]]
-    source = 'config'
-    target = 'assets/config'
-  # 只是为了这个文档在文档中公开 GitHub 英雄图像
-  [[module.mounts]]
-    source = '../images'
-    target = 'assets/images'
-  # 只是为了这个文档公开文档中的 CHANGELOG.md
-  [[module.mounts]]
-    source = '../CHANGELOG.md'
-    target = 'assets/CHANGELOG.md'
-  # 只是为了这个文档公开文档中的 README.md
-  [[module.mounts]]
-    source = '../README.md'
-    target = 'assets/README.md'
 
 [params]
   # 用于显示文档的 siteparam 简码的演示设置。
