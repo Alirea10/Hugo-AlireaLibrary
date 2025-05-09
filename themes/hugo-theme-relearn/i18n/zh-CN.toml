@@ -98,7 +98,7 @@ other = "将链接复制到剪贴板"
 other = "链接复制到剪贴板！"
 
 [Chapter]
-other = "第{{.}}章"
+other = "{{.}}"
 
 [Language]
 other = "语言"
