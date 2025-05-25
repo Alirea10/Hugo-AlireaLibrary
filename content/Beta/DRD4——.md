@@ -10,9 +10,9 @@ weight = 14
 
 ## 分支
 
-|    分支    |     描述     |
-| :--------: | :----------: |
-| **镜中人** | 拥有两种形态 |
+|  分支  |     描述     |
+| :----: | :----------: |
+| 镜中人 | 拥有两种形态 |
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78 26" width="78px" height="26px">
   <defs>
