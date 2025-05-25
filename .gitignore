@@ -1,4 +1,4 @@
-# 生成的HTML文件
+# 生成的静态网页
 public/
 public.6.4.0+tip/
 
@@ -6,7 +6,11 @@ public.6.4.0+tip/
 *.bat
 
 #IDE
+.idea
 .vscode
 
 #hugo本体
 hugo.exe
+
+#日志
+.log
