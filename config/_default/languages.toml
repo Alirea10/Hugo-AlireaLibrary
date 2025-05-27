@@ -16,12 +16,12 @@
 [[cn.menu.shortcuts]]
   pre = '<i class="fa-fw fas fa-puzzle-piece"></i> '
   name = 'Github仓库'
-  url = 'https://mcshelby.github.io/hugo-theme-relearn/index.html'
+  url = 'https://github.com/Alirea10/Hugo-AlireaLibrary'
   weight = 10
 [[cn.menu.shortcuts]]
   pre = '<i class="fa-fw fab fa-github"></i> '
   name = 'Github Web仓库'
-  url = 'https://github.com/McShelby/hugo-theme-relearn'
+  url = 'https://github.com/Alirea10/Hugo-AlireaLibraryWeb'
   weight = 20
 
 # this is ourrr way t' showcase th' multilang settings by
