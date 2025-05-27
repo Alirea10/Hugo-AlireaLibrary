@@ -1,7 +1,6 @@
 +++
-archetype = "home"
 title = "AlireaLibrary"
-
+type = "home"
 +++
 
 欢迎来到我——Alirea的【大图书馆】。

@@ -1,0 +1,54 @@
+<style>
+    a svg {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+    }
+    a svg text {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 90px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    .tspan1, .tspan2 {
+        animation: stroke 3s forwards;
+    }
+    .tspan2 {
+        fill: transparent;
+        stroke: rgba(54, 95, 160, 1);
+        --final-color: #e74c3c;
+    }
+    @keyframes stroke {
+        0% {
+            fill: rgba(72, 138, 20, 0);
+            stroke: rgba(54, 95, 160, 1);
+            stroke-dashoffset: 25%;
+            stroke-dasharray: 0 50%;
+            stroke-width: 0.8;
+        }
+        50% {
+            fill: rgba(72, 138, 20, 0);
+            stroke-width: 1.2;
+        }
+        70% {
+            fill: rgba(72, 138, 20, 0);
+            stroke-width: 1.5;
+        }
+        100% {
+            fill: var(--final-color, rgba(72, 138, 204, 1));
+            stroke: rgba(54, 95, 160, 0);
+            stroke-dashoffset: -25%;
+            stroke-dasharray: 50% 0;
+            stroke-width: 0;
+        }
+    }
+</style>
+<a href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" .Site.Home) }}">
+<svg viewBox="0 0 1000 200">
+    <text x="50%" y="70%" text-anchor="middle">
+        <tspan class="tspan1">Alirea</tspan>
+        <tspan class="tspan2" >Library</tspan>
+    </text>
+</svg>
+</a>
