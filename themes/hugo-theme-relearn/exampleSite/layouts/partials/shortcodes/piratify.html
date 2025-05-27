@@ -1,7 +1,8 @@
 {{- $page := .page }}
 {{- if and (not $page) .context }}
   {{- $page = .context }}
-  {{- warnf "%q: DEPRECATED parameter 'context' for shortcode 'piratify' found, use 'page' instead; see https://mcshelby.github.io/hugo-theme-relearn/basics/migration#5180" $page.File.Filename }}
+  {{- $filepath := "[virtual file]" }}{{ with and $page $page.File $page.File.Filename }}{{ $filepath = . }}{{ end }}
+  {{- warnf "%q: DEPRECATED parameter 'context' for shortcode 'piratify' found, use 'page' instead; see https://mcshelby.github.io/hugo-theme-relearn/introduction/releasenotes/5/#5-18-0" $filepath }}
 {{- end }}
 {{- $content := .content }}
 {{- $pagefield := cond (ne $content nil) nil (.pagefield | default "Content") }}
@@ -38,7 +39,7 @@
 	{{- if $writenotice }}
 		{{- partial "shortcodes/notice.html" (dict
 			"page" $page
-			"content" "<p>Fello' pirrrates, grog made us dizzy! Be awarrre <b>some stuff may look weird</b> in this trrranslat'n. Like <b>Merrrmaids</b>, do'n <b>math or chemistrrry</b> and stuff.</p>\n"
+			"content" "<p>Fello' pirrrates, grog made us dizzy! Be awarrre some stuff may look weird in this trrranslat'n. Like seeing Merrrmaids and stuff.</p>\n"
 			"icon" "skull-crossbones"
 			"style" "warning"
 			"title" "Arrr! Pirrrates"
@@ -118,6 +119,7 @@
 	{{- $fix := dict
 		"warn'n" "warning"
 		"sect'n" "section"
+		"t'ble" "table"
 		"n Cap'n" "n"
 		"Avast right o' John" "Note right of John"
 	-}}

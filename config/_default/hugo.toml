@@ -1,225 +1,38 @@
-# 这是此主题出现在 https://themes.gohugo.io/上所需的设置
-# 将其更改为适合您的值；如果您的网站是从子目录提供的
-# 将其设置为“https://example.com/mysite/”
-baseURL = "https://alirea.top/"
+# The main configuration file.
+# Usable standalone for a fully functioning site
+# or as base values for all other configurations.
 
-# 从网络服务器和文件系统提供此页面所需的值；
-# 如果您不想从文件系统提供页面服务，您也可以设置此值
-# 为假
-relativeURLs = true # true -> 重写所有站点相关 URL（带有前导斜杠的 URL）以相对于当前内容
-# 如果将uglyURLs 设置为 false，则此主题会将“index.html”附加到任何页面捆绑链接
-# 这样您的站点也可以通过文件系统提供服务；如果你不想这样
-# 在 [params] 部分设置disableExplicitIndexURLs=true
-uglyURLs = false    # true -> basic/index.html -> basic.html
+# To use run `hugo` or `hugo server` from the `exampleSite` directory
 
-# Hugo 从中读取主题的目录；这是特定于您的
-# 安装并且肯定需要删除或更改
-themesdir = "/themes"
-# 是的，好吧，显然这是您网站的强制设置，如果您愿意的话
-# 使用这个主题;-)
-theme = "hugo-theme-relearn"
+# change this to a value appropriate for you; if your site is served from a subdirectory
+# set it like 'https://example.com/mysite/'
+baseURL = 'https://alirea.top/'
 
-# 确保您的defaultContentLanguage是[语言]中的第一个
-# 下面的数组，因为主题需要对其进行假设
-defaultContentLanguage = "zh"
-# 如果你想得到 rrrid o' arr 海盗废话，请取消注释下一行
-# 禁用语言 = ['pir']
+# 需要设置为 'true' 才能从 Web 服务器和文件系统提供此页面;
+# 如果你将此值设置为 'true'，则 'baseURL' 不能包含子目录;
+# 如果你不想从文件系统中提供你的页面，你也可以设置这个值
+# 改为 'false'
+relativeURLs = true # true -> rewrite all site-relative URLs (those with a leading slash) to be relative to the current content
 
-# 该展示的网站标题；你应该改变这个;-)
-title = "AlireaLibrary"
 
-# 不要使用任何自动生成的摘要
-summaryLength = 10
+# yeah, well, obviously a mandatory setting for your site, if you want to
+# use this theme ;-)
+theme = 'hugo-theme-relearn'
 
+defaultContentLanguage = 'cn'
+# if you want to get rrrid o' ourrr pirrrates nonsense uncomment th' next line
+# disableLanguages = ['pir']
+# feel free to delete all files and directories related to this translation:
+# - `content/pir/`
+# - `i18n/`
+# - `layouts/partials/shortcodes/piratify.html`
+# - `layouts/partials/toc.html`
+# - `layouts/shortcodes/piratify.html`
+
+# add showcase-specific output formats
 [outputs]
-  # 首页添加“搜索”，支持Lunr搜索；这是强制设置
-  # 用于侧面广泛的搜索功能
-  # 将“searchpage”添加到主页以创建专用搜索页面
-  # 将“打印”添加到主页、部分和页面以激活打印整个功能
-  # 章节
-  home = ["html", "rss", "print", "search", "searchpage"]
-  section = ["html", "rss", "print"]
-  page = ["html", "rss", "print"]
+  # `print` - activate the themes feature to print whole chapters or leaf pages
+  home = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
+  page = ['html', 'rss', 'print']
 
-[markup]
-  [markup.highlight]
-    # 如果代码换行，表格布局中的行号将会发生变化，所以更好
-    # 不使用它；视觉上，两种布局具有相同的外观和行为
-    lineNumbersInTable = false
-
-    # 附带的变体带有自己修改的色度语法突出显示
-    # 链接到您生成的 HTML 页面中的样式表；你可以使用Hugo来生成
-    # 根据您的喜好创建自己的样式表并在您的变体中使用它们；
-    # 如果你想使用 Hugo 的内部样式而不是附带的样式表：
-    # -删除`noClasses`或设置`noClasses = true`
-    # -将“style”设置为预定义的样式名称
-    # 注意：使用内部样式时，变体中的“--CODE-theme”设置
-    # 样式表将被忽略，内部样式用于所有变体和
-    # 均匀打印
-    noClasses = false
-    # 风格=“探戈”
-
-  [markup.goldmark]
-    # 这是主题 exampleSite 使盗版短代码正常工作所必需的
-    duplicateResourceFiles = true
-
-    # 激活此展示以使用 HTML 和 JavaScript；根据自己的需求来决定；
-    # 如果有疑问，请删除此行
-    renderer.unsafe = true
-
-  [markup.goldmark.extensions]
-    strikethrough = false
-
-    # 为此展示使用 Markdown 扩展
-    [markup.goldmark.extensions.extras]
-      [markup.goldmark.extensions.extras.delete]
-        enable = true
-      [markup.goldmark.extensions.extras.insert]
-        enable = true
-      [markup.goldmark.extensions.extras.mark]
-        enable = true
-      [markup.goldmark.extensions.extras.subscript]
-        enable = true
-      [markup.goldmark.extensions.extras.superscript]
-        enable = true
-
-    [markup.goldmark.extensions.passthrough]
-      enable = true
-      [markup.goldmark.extensions.passthrough.delimiters]
-        # 此处选择的设置与默认初始化相匹配
-        # 主题选择的 MathJax 库的；
-        # 如果你想调整到不同的值你还需要
-        # 将它们设置在“[params] mathJaxInitialize”中
-        inline = [['\(', '\)'], ['$',  '$']]
-        block  = [['\[', '\]'], ['$$', '$$']]
-
-# 展示菜单快捷方式；您可以使用相对 URL 链接
-# 到您的内容或使用完全限定的 URL 链接到外部
-# 你的项目
-[languages]
-  [languages.zh]
-    title = "AlireaLibrary"
-    weight = 1
-    languageCode = "zh"
-    languageName = "简体中文"
-    # 语言相关设置：
-    # 用例 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-    #contentDir =“内容/en”
-    [languages.zh.params]
-      landingPageName = "<i class='fa-fw fas fa-home'></i> 主页"
-
-  [[languages.zh.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> Github Hugo构建仓库"
-    identifier = "Github Hugo"
-    url = "https://github.com/Alirea10/Hugo-AlireaLibraryWeb#"
-    weight = 10
-
-  [[languages.zh.menu.shortcuts]]
-    name = "<i class='fa-fw fab fa-github'></i> Github WEB构建仓库"
-    identifier = "Github WEB"
-    weight = 20
-
-  # [[languages.zh.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-bullhorn'></i> Credits"
-  #   pageRef = "more/credits/"
-  #   weight = 30
-
-  # [[languages.zh.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-tags'></i> Tags"
-  #   pageRef = "tags/"
-  #   weight = 40
-
-  # [[languages.zh.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-layer-group'></i> Categories"
-  #   pageRef = "categories/"
-  #   weight = 50
-
-  # 这是我们展示多语言设置的方式
-  # 自动翻译英语内容；我们是
-  # 懒惰，不支持进一步翻译；呃，
-  # 别以为这很严重，伙计；这是令人毛骨悚然的黑客并且：
-  # 无意提供产品！啊！
-
-  # [languages.pir]
-  #   title = "Cap'n Hugo Relearrrn Theme"
-  #   weight = 2
-  #   # 也有语言密钥会更符合标准
-  #   # 名为 art-x-pir 但这需要重命名所有文件
-  #   languageCode = "art-x-pir"
-  #   languageDirection = "rtl"
-  #   languageName = "Arrr! ☠ Pirrrates ☠"
-  #   # 语言相关设置：
-  #   # 用例 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-  #   #contentDir =“内容/pir”
-  #   [languages.pir.params]
-  #     landingPageName = "<i class='fa-fw fas home'></i> Arrr! Home"
-
-  # [[languages.pir.menu.shortcuts]]
-  #   name = "<i class='fa-fw fab fa-github'></i> GitHub repo"
-  #   identifier = "ds"
-  #   url = "https://github.com/McShelby/hugo-theme-relearn"
-  #   weight = 10
-
-  # [[languages.pir.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-camera'></i> Showcases"
-  #   pageRef = "showcase/"
-  #   weight = 20
-
-  # [[languages.pir.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-bullhorn'></i> Crrredits"
-  #   pageRef = "more/credits/"
-  #   weight = 30
-
-  # [[languages.pir.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-tags'></i> Arrr! Tags"
-  #   pageRef = "tags/"
-  #   weight = 40
-
-  # [[languages.pir.menu.shortcuts]]
-  #   name = "<i class='fa-fw fas fa-layer-group'></i> Categorrries"
-  #   pageRef = "categories/"
-  #   weight = 50
-
-# 在此展示中仅需要安装来访问公开的屏幕截图和变更日志；
-# 如果您不需要进一步安装，请删除此部分
-[module]
-  [[module.mounts]]
-    source = 'archetypes'
-    target = 'archetypes'
-  [[module.mounts]]
-    source = 'assets'
-    target = 'assets'
-
-  # 语言相关设置：
-  # 用例 https://gohugo.io/content-management/multilingual/#translation-by-filename
-  [[module.mounts]]
-    source = 'content'
-    target = 'content'
-  # 用例 https://gohugo.io/content-management/multilingual/#translation-by-content-directory
-  #[[模块安装]]
-  #  郎 = 'en'
-  #  来源='内容/en'
-  #  目标='内容'
-  #[[模块安装]]
-  #  郎='皮尔'
-  #  来源 = '内容/pir'
-  #  目标='内容'
-
-  [[module.mounts]]
-    source = 'data'
-    target = 'data'
-  [[module.mounts]]
-    source = 'i18n'
-    target = 'i18n'
-  [[module.mounts]]
-    source = 'layouts'
-    target = 'layouts'
-  [[module.mounts]]
-    source = 'static'
-    target = 'static'
-
-[params]
-  # 用于显示文档的 siteparam 简码的演示设置。
-  siteparam.test.text = "A **nested** option <b>with</b> formatting"
-  # 仅针对文档扩展图像效果。
-  imageEffects.bg-white = true
