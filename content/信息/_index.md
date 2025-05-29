@@ -1,6 +1,7 @@
 +++
 archetype = "chapter"
 title = "info"
+weight =90
 
 +++
 
