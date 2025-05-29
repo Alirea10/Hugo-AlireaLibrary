@@ -12,7 +12,7 @@ baseURL = 'https://alirea.top/'
 # 如果你将此值设置为 'true'，则 'baseURL' 不能包含子目录;
 # 如果你不想从文件系统中提供你的页面，你也可以设置这个值
 # 改为 'false'
-relativeURLs = true # true -> rewrite all site-relative URLs (those with a leading slash) to be relative to the current content
+relativeURLs = false # true -> rewrite all site-relative URLs (those with a leading slash) to be relative to the current content
 
 
 # yeah, well, obviously a mandatory setting for your site, if you want to
