@@ -14,6 +14,27 @@ weight = 14
 | :----: | :--------------------------------: |
 | 术愈师 | 恢复友方单位生命，治疗可以恢复技力 |
 
+<div style="display: flex; justify-content: center; align-items: center; ">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 104 78" width="20vw" height="20vh">
+        <defs>
+            <rect id="1" fill="#27a6f3" width="22" height="22"/>
+            <rect id="2" fill="none" stroke="gray" stroke-width="2" width="20" height="20"/>
+        </defs>
+        <use xlink:href="#2" x="2" y="2"/>
+        <use xlink:href="#2" x="28" y="2"/>
+        <use xlink:href="#2" x="54" y="2"/>
+        <use xlink:href="#2" x="80" y="2"/>
+        <use xlink:href="#1" x="1" y="27"/>
+        <use xlink:href="#2" x="28" y="28"/>
+        <use xlink:href="#2" x="54" y="28"/>
+        <use xlink:href="#2" x="80" y="28"/>
+        <use xlink:href="#2" x="2" y="54"/>
+        <use xlink:href="#2" x="28" y="54"/>
+        <use xlink:href="#2" x="54" y="54"/>
+        <use xlink:href="#2" x="80" y="54"/>
+    </svg>
+</div>
+
 ## 面板
 
 | 攻击力 | 防御力 | 法抗 | 生命值 |
@@ -42,22 +63,22 @@ weight = 14
 
 ### 天赋二
 
-|      | 精1  |
+| 共联 | 精2  |
 | ---- | ---- |
 
-123
+攻击范围内的我方自动回复的干员技力回复速度提升10%，霞音治疗时，为攻击范围内一名攻击回复的干员回复一点技力
 
 ## 技能
 
 ### 技能一
 
-| 名字 |自回自动    |
-| ---- | ---- |    
+| 快速治疗 |自回自动    |
+| ---- | ---- |
 
-| /    | /    | /    | /    | 持续s |
-| ---- | ---- | ---- | ---- | ----- |
+| 0/9  | 0/9  | 0/8  | 0/7  | 可充能两次 |
+| ---- | ---- | ---- | ---- | ---------- |
 
-123
+下一次治疗后，立即进行一次治疗
 
 ### 技能二
 
