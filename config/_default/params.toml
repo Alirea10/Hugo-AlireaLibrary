@@ -33,3 +33,5 @@ alwaysopen=false
 [[themeVariant]]
   identifier = 'zen-dark'
   name = 'zen-dark'
+
+additionalContentLanguage = ['zh']
