@@ -1,7 +1,6 @@
 +++
 archetype = "chapter"
-title = "info"
-weight =90
+title = "其他信息"
 
 +++
 
