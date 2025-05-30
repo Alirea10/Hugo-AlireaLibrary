@@ -29,7 +29,7 @@ defaultContentLanguage = 'cn'
 # - `layouts/partials/toc.html`
 # - `layouts/shortcodes/piratify.html`
 
-# add showcase-specific output formats
-[outputs]
-  # `print` - activate the themes feature to print whole chapters or leaf pages
-  home = ['html', 'rss', 'print']
+## add showcase-specific output formats
+#[outputs]
+#  # `print` - activate the themes feature to print whole chapters or leaf pages
+#  home = ['html', 'rss', 'print']
