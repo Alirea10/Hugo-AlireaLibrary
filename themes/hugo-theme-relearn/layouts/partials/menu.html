@@ -159,7 +159,7 @@
       {{- $isCrosslink = true }}
       {{- $url = .Params.menuUrl | relLangURL }}
     {{- end }}
-    {{- $pre := partial "menu-pre.htmll" . }}
+    {{- $pre := partial "menu-pre.html" . }}
     {{- $post := partial "menu-post.html" . }}
     {{- if and $hasVisibleChildren (not $isCrosslink) }}
       {{- $isCollapsible := .Params.collapsibleMenu | default site.Params.collapsibleMenu }}
@@ -318,7 +318,7 @@
     {{- $pre := .Pre }}
     {{- $post := .Post }}
     {{- with $entryObject }}
-      {{- $pre = or $pre (partial "menu-pre.htmll" .) }}
+      {{- $pre = or $pre (partial "menu-pre.html" .) }}
       {{- $post = or $post (partial "menu-post.html" .) }}
     {{- end }}
     {{- if $hasVisibleChildren }}
