@@ -19,7 +19,7 @@ relativeURLs = true # true -> rewrite all site-relative URLs (those with a leadi
 # use this theme ;-)
 theme = 'hugo-theme-relearn'
 
-defaultContentLanguage = 'cn'
+defaultContentLanguage = 'zh-CN'
 # if you want to get rrrid o' ourrr pirrrates nonsense uncomment th' next line
 # disableLanguages = ['pir']
 # feel free to delete all files and directories related to this translation:
@@ -30,6 +30,6 @@ defaultContentLanguage = 'cn'
 # - `layouts/shortcodes/piratify.html`
 
 ## add showcase-specific output formats
-#[outputs]
-#  # `print` - activate the themes feature to print whole chapters or leaf pages
-#  home = ['html', 'rss', 'print']
+[outputs]
+  # `print` - activate the themes feature to print whole chapters or leaf pages
+  home = ['html', 'rss', 'print']
