@@ -56,10 +56,10 @@ other = "显示源代码"
 other = "打印整章"
 
 [More-action]
-other = "更多"
+other = ""
 
 [shortcuts-menuTitle]
-other = "更多"
+other = ""
 
 [Expand-title]
 other = "展开"
