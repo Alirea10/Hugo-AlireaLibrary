@@ -7,7 +7,7 @@ weight = 2
 
 +++
 
-# 维可 Wink
+# 维可	Wink
 
 <svg width="224" height="40" viewBox="0 0 144 24">
   <defs>

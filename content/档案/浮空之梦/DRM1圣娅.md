@@ -6,7 +6,7 @@ weight = 1
 
 +++
 
-# 圣娅 Seia
+# 圣娅	Seia
 
 <svg width="224" height="40" viewBox="0 0 144 24">
   <defs>
