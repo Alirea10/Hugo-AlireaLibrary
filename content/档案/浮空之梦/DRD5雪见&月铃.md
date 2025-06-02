@@ -5,7 +5,7 @@ weight = 15
 
 +++
 
-# 雪见&月铃
+# 雪见&月铃	Miyuki&Tsukirin
 
 <svg width="224" height="40" viewBox="0 0 144 24">
   <defs>
