@@ -13,4 +13,4 @@ public.6.4.0+tip/
 hugo.exe
 
 #日志
-.log
+*.log
